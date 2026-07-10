@@ -5,7 +5,6 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 import { Analytics } from "@vercel/analytics/react";
-import Chat from "@/components/Chat";
 import ClientTopProgressBar from "@/components/ClientTopProgressBar";
 
 const poppins = Poppins({
@@ -24,38 +23,36 @@ const jost = Jost({
 });
 
 export const metadata = {
-	metadataBase: new URL("https://www.alvalens.my.id"),
-	title: "Alvalens | Portofolio",
+	metadataBase: new URL("https://gerardmoreno.vercel.app"),
+	title: "Gerard Moreno | Portfolio",
 
 	description:
-		"Alvalen, Product-Minded Software Engineer specializing in Next.js, Spring Boot, and AI Solutions. Founder & CTO of Intervyou.",
+		"Gerard Moreno, Automatización de Procesos y Operaciones con IA para PYMES. Google Apps Script, AppSheet, agentes de IA y aplicaciones web.",
 
-	author: "Alvalen Shafelbilyunazra",
-	siteUrl: "https://www.alvalens.my.id",
-	applicationName: "Alvalens",
+	author: "Gerard Moreno Oliva",
+	siteUrl: "https://gerardmoreno.vercel.app",
+	applicationName: "Gerard Moreno",
 
 	keywords: [
-		"alvalens",
-		"alvalen",
-		"alvalen shafel",
-		"shafel",
-		"alvalen shafelbilyunazra",
-		"alvalen shafel bilyunazra",
-		"bloodfallen",
-		"alvalen porto",
-		"alvalen um",
+		"gerard moreno",
+		"automatización de procesos",
+		"automatización con IA",
+		"google apps script",
+		"appsheet",
+		"operaciones pyme",
+		"gerardmedano",
 	],
 
 	openGraph: {
 		type: "website",
-		url: "https://www.alvalens.my.id",
-		title: "Alvalens | Portofolio",
-		siteName: "Alvalens | Portofolio",
-		description: "My name is Alvalens, This is my portofolio website.",
+		url: "https://gerardmoreno.vercel.app",
+		title: "Gerard Moreno | Portfolio",
+		siteName: "Gerard Moreno | Portfolio",
+		description: "Automatización de Procesos y Operaciones con IA para PYMES.",
 		images: [
 			{
 				url: "/og-image-rev.png",
-				alt: "Alvalens Portofolio",
+				alt: "Gerard Moreno Portfolio",
 				width: 1200,
 				height: 630,
 			},
@@ -66,27 +63,19 @@ export const metadata = {
 const jsonLd = {
 	"@context": "https://schema.org",
 	"@type": "Person",
-	name: "Alvalen Shafelbilyunazra",
-	url: "https://www.alvalens.my.id",
-	jobTitle: "Full Stack Software Engineer",
-	worksFor: [
-		{ "@type": "Organization", name: "MGG Software" },
-		{ "@type": "Organization", name: "Intervyou" },
-	],
-	alumniOf: {
-		"@type": "CollegeOrUniversity",
-		name: "Universitas Negeri Malang",
-	},
+	name: "Gerard Moreno Oliva",
+	url: "https://gerardmoreno.vercel.app",
+	jobTitle: "Automatización de Procesos y Operaciones con IA para PYMES",
+	worksFor: [{ "@type": "Organization", name: "Keller Williams" }],
 	sameAs: [
-		"https://github.com/Alvalens",
-		"https://www.linkedin.com/in/alvalen-shafel-8a081a254/",
-		"https://www.instagram.com/alvalens_/",
+		"https://github.com/gerardmedano",
+		"https://www.instagram.com/gerardmedano",
 	],
 };
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en" className={`${poppins.variable} ${jost.variable}`}>
+		<html lang="es" className={`${poppins.variable} ${jost.variable}`}>
 			<body>
 				<script
 					type="application/ld+json"
@@ -95,7 +84,6 @@ export default function RootLayout({ children }) {
 				<ClientTopProgressBar />
 				<Navbar />
 				{children}
-				<Chat />
 				<Analytics />
 			</body>
 		</html>

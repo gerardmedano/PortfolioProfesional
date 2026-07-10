@@ -6,155 +6,106 @@ import { useState } from "react";
 const experiences = [
 	{
 		id: 1,
-		startDate: "Sep 2023",
-		endDate: "Jan 2024",
-		company: "Universitas Negeri Malang",
-		position: "Assistant Lecturer",
-		type: "Seasonal",
-		location: "Malang, Indonesia",
+		startDate: "2002",
+		endDate: "2005",
+		company: "Clarion Hotel & Foxfields",
+		position: "Food & Beverage Manager",
+		type: "Jornada completa",
+		location: "Reino Unido",
 		description:
-			"Assisted in teaching and mentoring students in algorithms and data structures, focusing on practical applications and problem-solving techniques. Developed course materials and provided support in lab sessions.",
-		skills: ["Python", "C", "Algorithms", "Data Structures", "Mentoring"],
+			"Coordinación de un equipo de 20 personas, organizando turnos y pedidos, gestión del restaurante y atención de quejas o cualquier asunto en ausencia del director.",
+		skills: ["Liderazgo de equipo", "Organización", "Atención al cliente"],
 	},
 	{
 		id: 2,
-		startDate: "Jul 2024",
-		endDate: "Jan 2025",
-		company: "Outlier AI",
-		position: "AI Trainer",
-		type: "Freelance (Remote)",
-		location: "Oakland, California",
+		startDate: "2006",
+		endDate: "2007",
+		company: "Paraíso del Sol",
+		position: "Recepcionista",
+		type: "Jornada completa",
+		location: "Tenerife",
 		description:
-			"Trained LLM models using RLFH, focusing on enhancing their understanding of human language and improving their response accuracy. Collaborated with a team of AI specialists to refine model performance and ensure high-quality outputs.",
-		skills: [
-			"Generative AI",
-			"RLHF",
-			"LLM",
-			"Prompt Engineering",
-			"Teamwork",
-		],
+			"Atención al cliente, reservas y tareas comunes de recepción en un hotel vacacional.",
+		skills: ["Atención al cliente", "Recepción", "Reservas"],
 	},
 	{
 		id: 3,
-		startDate: "Jun 2023",
-		endDate: "Feb 2025",
-		company: "PUI-PT DLI",
-		position: "Fullstack Developer",
-		type: "Freelance",
-		location: "Malang, Indonesia",
+		startDate: "2007",
+		endDate: "2008",
+		company: "Las Dalias (Iberostar)",
+		position: "Recepcionista",
+		type: "Jornada completa",
+		location: "Tenerife",
 		description:
-			"Crafted and maintained web applications using Laravel, ensuring high performance and responsiveness. Collaborated with designers and other  developers to create seamless user experiences.",
-		skills: ["Laravel", "MySQL", "PHP", "JavaScript", "Teamwork"],
+			"Atención al cliente, reservas y tareas comunes de recepción en una cadena hotelera internacional.",
+		skills: ["Atención al cliente", "Recepción", "Reservas"],
 	},
 	{
 		id: 4,
-		startDate: "Apr 2025",
-		endDate: "Jul 2025",
-		company: "Vektorian Labophase",
-		position: "Front-end Developer",
-		type: "Freelance",
-		location: "Malang, Indonesia",
+		startDate: "2008",
+		endDate: "2009",
+		company: "Laguna Park II",
+		position: "Recepcionista",
+		type: "Jornada completa",
+		location: "Tenerife",
 		description:
-			"Developed and maintained web applications using Next.js. Focused on creating responsive and user-friendly interfaces while ensuring backend functionality. Collaborated with backend and designers to implement modern UI/UX principles.",
-		skills: ["Next.js", "Typescript", "Teamwork"],
+			"Atención al cliente, reservas y tareas comunes de recepción.",
+		skills: ["Atención al cliente", "Recepción", "Reservas"],
 	},
 	{
 		id: 5,
-		startDate: "Apr 2023",
-		endDate: "Jul 2025",
-		company: "Self-Employed",
-		position: "Web Developer & AI Consultant",
-		type: "Freelance",
-		location: "Malang, Indonesia",
+		startDate: "2009",
+		endDate: "2023",
+		company: "Marola Park Aptos",
+		position: "Recepcionista",
+		type: "Jornada completa",
+		location: "Tenerife",
 		description:
-			"Developed 15+ web applications using Next.js, React, and Laravel. Provided AI consulting services, including creating custom LLMs. Focused on delivering high-quality, user-friendly applications and AI solutions.",
+			"Todas las tareas comunes de recepción: atención al cliente, gestión de quejas, conserjería, relaciones con clientes repetidores, reservas, gestión del pendiente, facturación, cupos y ofertas, gestión de extranets, comunicación con agencias, mecanización de contratos y creación de protocolos de trabajo.",
 		skills: [
-			"Next.js",
-			"React",
-			"Laravel",
-			"MySQL",
-			"PostgreSQL",
-			"MongoDB",
-			"JavaScript",
-			"TypeScript",
-			"Gemini AI",
+			"Atención al cliente",
+			"Facturación",
+			"Gestión de extranets",
+			"Creación de protocolos",
 		],
 	},
 	{
 		id: 6,
-		startDate: "Aug 2023",
-		endDate: "Feb 2025",
-		company: "PT Hafdzamedia Teknologi Aplikasi",
-		position: "Fullstack Web Developer",
-		type: "Part-time",
-		location: "Malang, Indonesia",
+		startDate: "2024",
+		endDate: "Actualidad",
+		company: "Fotógrafo y Creador de Contenido",
+		position: "Autónomo",
+		type: "Tiempo parcial",
+		location: "Tenerife",
 		description:
-			"Developed and maintained web applications using React, Next.js, and Laravel. Focused on creating responsive and user-friendly interfaces while ensuring backend functionality.",
+			"Fotografía y vídeo (reels) para restaurantes, concesionarios, inmobiliarias, campos de golf y eventos. Colaboración habitual con un ayuntamiento, creando fotografía y contenido en vídeo.",
 		skills: [
-			"React",
-			"Next.js",
-			"Laravel",
-			"MySQL",
-			"JavaScript",
-			"TypeScript",
-			"Teamwork",
+			"Fotografía",
+			"Vídeo",
+			"Lightroom",
+			"Photoshop",
+			"CapCut",
+			"Canva",
+			"DaVinci Resolve (iniciándome)",
 		],
 	},
 	{
 		id: 7,
-		startDate: "Feb 2025",
-		endDate: "Aug 2025",
-		company: "Joki Proyek",
-		position: "IT Implementation Specialist",
-		type: "Contract (Remote)",
-		location: "Malang, Indonesia",
+		startDate: "2024",
+		endDate: "Actualidad",
+		company: "Keller Williams",
+		position: "Coordinación de Oficina y Marketing",
+		type: "Jornada completa",
+		location: "Tenerife",
 		description:
-			"Engineered internal microservices architecture. Refactored legacy monolithic modules and optimized messaging systems using Laravel/Next.js.",
+			"Coordinación general de la oficina (~20 asesores): gestión de correo y atención telefónica, asistencia a los asesores, creación de fichas y contenido de propiedades, gestión de mandatos y publicación en CRM Inmovilla. Desarrollo de sistemas de automatización con Google Apps Script (reparto automático de leads, registro de llamadas, vencimiento de mandatos), AppSheet (gestión de reservas y limpieza) y agentes de IA generativa (generación de contenido editorial).",
 		skills: [
-			"Next.js",
-			"Laravel",
-			"MySQL",
-			"PostgreSQL",
-			"JavaScript",
-			"TypeScript",
-			"MongoDB",
-			"Docker",
-			"Teamwork",
-		],
-	},
-	{
-		id: 8,
-		startDate: "Jan 2025",
-		endDate: "Present",
-		company: "Intervyou (Google for Startups)",
-		position: "Co-Founder & CTO",
-		type: "Part-time",
-		location: "Remote",
-		description:
-			"Bootstrapped an AI-powered SaaS to 3,000+ users. Architected the core AI assessment engine using Next.js and RAG pipelines.",
-		skills: [
-			"Next.js",
-			"Generative AI",
-			"RAG",
-			"Product Engineering",
-		],
-	},
-	{
-		id: 9, 
-		startDate: "Aug 2025",
-		endDate: "Present",
-		company: "MGG Software",
-		position: "Software Engineer (Enterprise Solutions)",
-		type: "Full-time (Remote)",
-		location: "Malang",
-		description:
-			"Core engineer for a Tier-1 Singaporean Government Agency. Engineered high-availability backend microservices using Java Spring Boot, ensuring 99.9% uptime for nationwide traffic.",
-		skills: [
-			"Java Spring Boot",
-			"Microservices",
-			"Docker",
-			"PostgreSQL",
-			"React.js",
+			"Google Apps Script",
+			"AppSheet",
+			"Gemini API",
+			"CRM Inmovilla",
+			"Automatización",
+			"Marketing",
 		],
 	},
 ];
@@ -180,7 +131,7 @@ function Title() {
 						delay: 0.7,
 						type: "spring",
 					}}>
-					Professional Experience
+					Experiencia Profesional
 				</motion.h1>
 			</div>
 		</div>
@@ -202,18 +153,18 @@ function TimelineCard({ experience, index, isEven }) {
 				<div className="flex items-center justify-center gap-6">
 					<div className="text-center">
 						<div className="text-sm font-bold">{experience.startDate}</div>
-						<div className="text-xs text-gray-300">Start</div>
+						<div className="text-xs text-gray-300">Inicio</div>
 					</div>
 					<div className="w-px h-8 bg-gray-500"></div>
 					<div className="text-center">
 						<div className="text-sm font-bold">{experience.endDate}</div>
-						<div className="text-xs text-gray-300">End</div>
+						<div className="text-xs text-gray-300">Fin</div>
 					</div>					<div className="w-px h-8 bg-gray-500"></div>
 					<div className="text-center">
 						<div className="text-sm font-medium text-gray-400">
 							{experience.location}
 						</div>
-						<div className="text-xs text-gray-300">Location</div>
+						<div className="text-xs text-gray-300">Ubicación</div>
 					</div>
 				</div>
 			</div>
@@ -336,7 +287,7 @@ export default function Experience() {
 									transition-all duration-300 hover:scale-105 shadow-lg flex items-center gap-2">
 								{showAll ? (
 									<>
-										Show Less
+										Ver menos
 										<svg
 											className="w-4 h-4 transform rotate-180"
 											fill="none"
@@ -352,7 +303,7 @@ export default function Experience() {
 									</>
 								) : (
 									<>
-										View More Experience
+										Ver más experiencia
 										<svg
 											className="w-4 h-4"
 											fill="none"

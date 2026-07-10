@@ -1,9 +1,8 @@
 import Image from "next/image";
-import Card from "./spotify/card";
 import { motion } from "framer-motion";
-import Me1 from "@/public/image/me1.jpg";
-import Me2 from "@/public/image/me2.jpg";
-import Me3 from "@/public/image/me3.jpg";
+import Me1 from "@/public/image/me/gerard.jpg";
+import Me2 from "@/public/image/me/gerard.jpg";
+import Me3 from "@/public/image/me/gerard.jpg";
 import Hr from "@/components/Hr";
 
 function Title() {
@@ -11,7 +10,7 @@ function Title() {
 		<div className="mt-10 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
 			<div className="flex justify-center items-center flex-col my-5 self-start ">
 				<Hr variant="long"></Hr>
-				<h1 className="text-3xl font-bold mt-3">Who Am I?</h1>
+				<h1 className="text-3xl font-bold mt-3">¿Quién soy?</h1>
 			</div>
 		</div>
 	);
@@ -35,7 +34,7 @@ export default function About() {
 								className="relative w-full h-full">
 								<Image
 									src={Me1}
-									alt="Alvalens"
+									alt="Gerard Moreno"
 									fill
 									sizes="(max-width: 768px) 80vw, 40vw"
 									className="object-cover"
@@ -59,7 +58,7 @@ export default function About() {
 								className="relative w-full h-full">
 								<Image
 									src={Me2}
-									alt="Alvalens"
+									alt="Gerard Moreno"
 									fill
 									sizes="(max-width: 768px) 60vw, 25vw"
 									className="object-cover"
@@ -85,7 +84,7 @@ export default function About() {
 								className="relative w-full h-full">
 								<Image
 									src={Me3}
-									alt="Alvalens"
+									alt="Gerard Moreno"
 									fill
 									sizes="(max-width: 768px) 80vw, 35vw"
 									className="object-cover"
@@ -111,51 +110,48 @@ export default function About() {
 						type: "spring",
 					}}>
 					<h2 className="text-2xl font-bold tracking-wider mb-3">
-						Alvalen Shafelbilyunazra
+						Gerard Moreno Oliva
 					</h2>
 					<p className="text-gray-600 text-justify title text-lg leading-relaxed">
-						I am a{" "}
+						No soy programador de formación, pero diseño, pruebo,
+						despliego y mantengo herramientas de{" "}
 						<span className="text-black font-medium">
-							Product-Minded Software Engineer{" "}
-						</span>
-						specialized in bridging the gap between{" "}
+							automatización de procesos
+						</span>{" "}
+						mediante desarrollo asistido por IA. Con más de 15
+						años de experiencia en{" "}
 						<span className="text-black font-medium">
-							Modern Web Ecosystems and Enterprise Architectures
+							atención al cliente, coordinación de oficina y
+							operaciones
 						</span>
-						. A Computer Science graduate from{" "}
-						<span className="text-black font-medium">
-							Universitas Negeri Malang
-						</span>
-						, my professional journey is defined by high-stakes
-						projects, ranging from robust government-scale
-						microservices to sophisticated{" "}
-						<span className="text-black font-medium">
-							RAG-powered SaaS products{" "}
-						</span>
-						designed to bring the power of Generative AI to
-						end-users.
+						, identifico procesos manuales del día a día de una
+						empresa y construyo soluciones reales para
+						eliminarlos.
 						<br />
 						<br />
-						Currently, I engineer large-scale enterprise systems at{" "}
+						Actualmente trabajo en{" "}
 						<span className="text-black font-medium">
-							MGG Software
-						</span>
-						, ensuring strict data compliance and high availability
-						for international clients. Simultaneously, I lead the
-						technical vision as the{" "}
+							Keller Williams
+						</span>{" "}
+						coordinando oficina y marketing, donde he
+						desarrollado sistemas de automatización con{" "}
 						<span className="text-black font-medium">
-							CTO of Intervyou
-						</span>
-						, an AI-driven platform supported by the{" "}
+							Google Apps Script
+						</span>{" "}
+						(reparto automático de leads, gestión de mandatos),{" "}
 						<span className="text-black font-medium">
-							Google for Startups Cloud Program and NVIDIA
-							Inception
-						</span>
-						. I remain dedicated to delivering measurable business
-						value at the intersection of web technologies and
-						artificial intelligence.
+							AppSheet
+						</span>{" "}
+						(gestión de reservas y limpieza) y agentes de{" "}
+						<span className="text-black font-medium">
+							IA generativa
+						</span>{" "}
+						(generación de contenido editorial). En paralelo,
+						soy fotógrafo y creador de contenido audiovisual
+						autónomo desde 2024, trabajando con inmobiliarias,
+						restaurantes, concesionarios, campos de golf,
+						eventos y un ayuntamiento.
 					</p>
-					<Card />
 				</motion.div>
 			</div>
 		</>

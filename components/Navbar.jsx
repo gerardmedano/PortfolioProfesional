@@ -74,7 +74,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 									variants={itemVariants}
 									animate={isNavOpen ? "open" : "closed"}
 									custom={0.1}>
-									Home
+									Inicio
 								</motion.h2>
 							</div>
 						</Link>
@@ -87,7 +87,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 									variants={itemVariants}
 									animate={isNavOpen ? "open" : "closed"}
 									custom={0.2}>
-									About
+									Sobre mí
 								</motion.h2>
 							</div>
 						</Link>
@@ -100,7 +100,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 									variants={itemVariants}
 									animate={isNavOpen ? "open" : "closed"}
 									custom={0.3}>
-									Projects
+									Proyectos
 								</motion.h2>
 							</div>
 						</Link>
@@ -113,7 +113,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 									variants={itemVariants}
 									animate={isNavOpen ? "open" : "closed"}
 									custom={0.4}>
-									Contact
+									Contacto
 								</motion.h2>
 							</div>
 						</Link>
@@ -146,7 +146,7 @@ const Navbar = () => {
 						className={`text-2xl ml-2 md:ml-0 transition-colors ease duration-500 ${
 							isNavOpen ? "text-white" : ""
 						}`}>
-						Alvalens
+						Gerard Moreno
 					</h1>
 				</div>
 				<div className="flex flex-row items-center">

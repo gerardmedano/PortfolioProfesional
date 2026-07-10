@@ -11,17 +11,15 @@ import { FullPageWrapper, Section, useFullPage } from "@alvalens/react-fullpage-
 
 // components
 import Button from "@/components/Button";
-import Me from "@/public/image/alvalen-front.webp";
-import MeAbout from "@/public/image/me2.jpg";
-import Setup from "@/public/image/setup.jpg";
-import ProjectAll from "@/public/image/projects.png";
+import Me from "@/public/image/me/gerard.jpg";
+import MeAbout from "@/public/image/me/gerard.jpg";
+import Setup from "@/public/image/projects/automation/leads/leads-diagram.png";
+import ProjectAll from "@/public/image/projects/automation/appsheet/appsheet-cover.jpg";
 import Hr from "@/components/Hr";
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function ScrollIndicator() {
@@ -81,7 +79,7 @@ const MyPage = () => {
 									width={500}
 									height={500}
 									className="rounded-full w-full h-full object-cover "
-									alt="Alvalens"
+									alt="Gerard Moreno"
 									placeholder="blur"
 								/>
 							</div>
@@ -94,7 +92,7 @@ const MyPage = () => {
 								delay: 0.2,
 								type: "spring",
 							}}>
-							Alvalen Shafel
+							Gerard Moreno
 						</motion.h3>
 						<motion.h1
 							className="text-black text-4xl md:text-6xl lg:text-6xl 2xl:text-8xl font-bold my-2 md:my-5"
@@ -104,7 +102,7 @@ const MyPage = () => {
 								delay: 0.3,
 								type: "spring",
 							}}>
-							Full Stack Software Engineer
+							Automatización de Procesos y Operaciones con IA para PYMES
 						</motion.h1>
 						<motion.p
 							className="title text-md 2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
@@ -114,12 +112,12 @@ const MyPage = () => {
 								delay: 0.4,
 								type: "spring",
 							}}>
-							Hi! I&rsquo;am Alvalen, A fullstack software
-							engineer specializing in modern Web Development with
-							a growing focus on Artificial Intelligence. I
-							architect scalable, production-ready engines—from
-							high-traffic Java microservices to RAG-powered SaaS
-							platforms.
+							Detecto procesos manuales en el día a día de una empresa y
+							construyo herramientas que los eliminan, usando IA como
+							acelerador. Más de 15 años de experiencia en operaciones y
+							atención al cliente, combinados con automatización real en
+							producción: Google Apps Script, AppSheet, agentes de IA y
+							aplicaciones web.
 						</motion.p>
 						<motion.div
 							className="buttons flex flex-row justify-center items-center space-x-4 mt-10"
@@ -129,17 +127,19 @@ const MyPage = () => {
 								delay: 0.5,
 								type: "spring",
 							}}>
-							<Button variation="primary">
+							{/* TODO: añadir /public/docs/cv.pdf con el CV actualizado y
+							    descomentar este botón */}
+							{/* <Button variation="primary">
 								<Link
 									href={"/docs/cv.pdf"}
 									target="_blank"
 									rel="noopener noreferrer"
 									download>
-									Download CV
+									Descargar CV
 								</Link>
-							</Button>
+							</Button> */}
 							<Button variation="secondary">
-								<a href="#contact">Contact Me</a>
+								<a href="#contact">Contacto</a>
 							</Button>
 						</motion.div>
 					</motion.div>
@@ -157,7 +157,7 @@ const MyPage = () => {
 								width={400}
 								height={550}
 								placeholder="blur"
-								alt="Alvalens"
+								alt="Gerard Moreno"
 								className="rounded-full w-full h-full object-cover"
 							/>
 						</div>
@@ -190,7 +190,7 @@ const MyPage = () => {
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
-								alt="Alvalens"
+								alt="Gerard Moreno"
 								placeholder="blur"
 							/>
 						</motion.div>
@@ -215,8 +215,7 @@ const MyPage = () => {
 								delay: 0.2,
 								type: "spring",
 							}}>
-							A brief introduction my journey as a software
-							engineer.
+							Una breve introducción a mi trayectoria.
 						</motion.p>
 						<motion.div
 							initial={{ y: 40, opacity: 0 }}
@@ -226,7 +225,7 @@ const MyPage = () => {
 								type: "spring",
 							}}>
 							<Button variation="primary">
-								<Link href="/about">Learn More</Link>
+								<Link href="/about">Saber más</Link>
 							</Button>
 						</motion.div>
 					</div>
@@ -258,7 +257,7 @@ const MyPage = () => {
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
-								alt="Alvalens Setup"
+								alt="Diagrama del sistema de leads"
 								placeholder="blur"
 							/>
 						</motion.div>
@@ -272,7 +271,7 @@ const MyPage = () => {
 								delay: 0.1,
 								type: "spring",
 							}}>
-							My Projects
+							Mis Proyectos
 						</motion.h1>
 						<Hr />
 						<motion.p
@@ -283,10 +282,10 @@ const MyPage = () => {
 								delay: 0.2,
 								type: "spring",
 							}}>
-							Selected works that I&apos;ve built over the years.
+							Proyectos de automatización e IA que he construido para
+							mejorar procesos reales de negocio.
 							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
 								{" "}
-								and currently working on.
 							</span>
 						</motion.p>
 						<motion.div
@@ -297,7 +296,7 @@ const MyPage = () => {
 								type: "spring",
 							}}>
 							<Button variation="primary">
-								<Link href="/projects">Learn More</Link>
+								<Link href="/projects">Saber más</Link>
 							</Button>
 						</motion.div>
 					</div>
@@ -329,7 +328,7 @@ const MyPage = () => {
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
-								alt="Alvalens Setup"
+								alt="Diagrama del sistema de leads"
 								placeholder="blur"
 							/>
 						</motion.div>
@@ -343,7 +342,7 @@ const MyPage = () => {
 								delay: 0.1,
 								type: "spring",
 							}}>
-							Get In Touch
+							Hablemos
 						</motion.h1>
 						<Hr />
 						<motion.p
@@ -354,9 +353,9 @@ const MyPage = () => {
 								delay: 0.2,
 								type: "spring",
 							}}>
-							Feel free to contact me if you have any{" "}
+							Escríbeme si quieres hablar de un proyecto, una oferta,{" "}
 							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
-								questions or just want to say hi.
+								o simplemente para saludar.
 							</span>
 						</motion.p>
 						<motion.p
@@ -367,14 +366,14 @@ const MyPage = () => {
 								delay: 0.3,
 								type: "spring",
 							}}>
-							<a href="mailto:Alvalen.shafel04@gmail.com?subject=Hello&body=Hello Alvalens,">
-								alvalen.shafel04@gmail.com
+							<a href="mailto:gerardmedano@gmail.com?subject=Hola Gerard">
+								gerardmedano@gmail.com
 							</a>
 						</motion.p>
 						{/* icons */}
 						<div className="flex justify-center items-center space-x-4">
 							<motion.a
-								href="mailto:Alvalen.shafel04@gmail.com?subject=Hello&body=Hello Alvalens,"
+								href="mailto:gerardmedano@gmail.com?subject=Hola Gerard"
 								aria-label="Send email"
 								className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
 								initial={{ y: 40, opacity: 0 }}
@@ -390,7 +389,7 @@ const MyPage = () => {
 							</motion.a>
 
 							<motion.a
-								href="https://github.com/Alvalens"
+								href="https://github.com/gerardmedano"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="GitHub profile"
@@ -407,7 +406,7 @@ const MyPage = () => {
 								/>
 							</motion.a>
 							<motion.a
-								href="https://www.instagram.com/alvalens_/"
+								href="https://www.instagram.com/gerardmedano"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="Instagram profile"
@@ -420,40 +419,6 @@ const MyPage = () => {
 								}}>
 								<FontAwesomeIcon
 									icon={faInstagram}
-									className="text-3xl"
-								/>
-							</motion.a>
-							<motion.a
-								href="https://www.linkedin.com/in/alvalen-shafel-8a081a254/"
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="LinkedIn profile"
-								className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
-								initial={{ opacity: 0, y: 40 }}
-								whileInView={{ opacity: 1, y: 0 }}
-								transition={{
-									y: { delay: 0.4 },
-									opacity: { delay: 0.5 },
-								}}>
-								<FontAwesomeIcon
-									icon={faLinkedin}
-									className="text-3xl"
-								/>
-							</motion.a>
-							<motion.a
-								href="https://discordapp.com/users/bloody#6118"
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="Discord profile"
-								className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
-								initial={{ opacity: 0, y: 40 }}
-								whileInView={{ opacity: 1, y: 0 }}
-								transition={{
-									y: { delay: 0.5 },
-									opacity: { delay: 0.6 },
-								}}>
-								<FontAwesomeIcon
-									icon={faDiscord}
 									className="text-3xl"
 								/>
 							</motion.a>

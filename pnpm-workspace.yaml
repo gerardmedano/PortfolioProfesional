@@ -1,6 +1,11 @@
 packages:
   - .
-  
+
+allowBuilds:
+  sharp: set this to true or false
+
+autoInstallPeers: true
+
 onlyBuiltDependencies:
   - core-js
   - sharp

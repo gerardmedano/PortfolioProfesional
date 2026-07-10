@@ -13,7 +13,7 @@ import Experience from "./components/experience.jsx";
 import Education from "./components/education.jsx";
 
 // images
-import Hero from "@/public/image/me2.jpg";
+import Hero from "@/public/image/me/gerard.jpg";
 
 import Hr from "@/components/Hr";
 import About from "./components/about/about.jsx";
@@ -42,7 +42,7 @@ export default function Page() {
 							className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 ">
 							<Image
 								src={Hero}
-								alt="Alvalen Shafel"
+								alt="Gerard Moreno"
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
@@ -52,13 +52,13 @@ export default function Page() {
 					</div>
 					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 pt-4 backdrop-filter backdrop-blur-sm md:backdrop-blur-none bg-gray-100 bg-opacity-50 md:bg-transparent md:pt-0">
 						<h1 className="md:bg-white bg-transparent lg:bg-transparent bg-opacity-50 md:px-0 text-black text-5xl md:text-8xl font-bold">
-							About Me
+							Sobre mí
 						</h1>
 						<Hr />
 						<p className="title text-xl mt-4 tracking-wider text-gray-900 leading-[1.7rem] mb-5 ">
-							A brief introduction my journey as a{" "}
+							Una breve introducción a mi trayectoria como{" "}
 							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
-								software engineer.
+								profesional de operaciones y automatización.
 							</span>
 						</p>
 						<motion.div
@@ -72,7 +72,7 @@ export default function Page() {
 								});
 							}}
 							className="mb-3">
-							<Button variation="primary">Scroll Down</Button>
+							<Button variation="primary">Bajar</Button>
 						</motion.div>
 					</div>
 				</div>

@@ -4,107 +4,70 @@ import { useState } from "react";
 import { CodepenIcon, WebhookIcon, ActivityIcon, MobileIcon } from "./icons"
 
 const skillCategories = {
-	web: {
-		title: "Web Development",
-		icon: CodepenIcon,
-		description: "Building modern, responsive web applications",
-		languages: [
-			{ name: "NextJS", highlight: true },
-			{ name: "React", highlight: true },
-			{ name: "TypeScript", highlight: true },
-			{ name: "JavaScript", highlight: false },
-			{ name: "Laravel", highlight: true },
-			{ name: "HTML", highlight: false },
-			{ name: "CSS", highlight: false },
-			{ name: "TailwindCSS", highlight: true },
-			{ name: "Bootstrap", highlight: false },
-			{ name: "Flask", highlight: false },
-			{ name: "Django", highlight: false },
-			{ name: "Firebase", highlight: false },
-		],
-		tools: [
-			"Vercel",
-			"Vite",
-			"Figma",
-			"Docker",
-			"Kubernetes",
-			"Git",
-			"Github",
-			"GitLab",
-			"Bitbucket",
-			"Google Cloud",
-			"Postman",
-		],
-	},
-	api: {
-		title: "Backend & API",
-		icon: WebhookIcon,
-		description: "Creating robust and scalable backend services",
-		languages: [
-			{ name: "Java Spring Boot", highlight: true },
-			{ name: "NodeJS", highlight: false },
-			{ name: "ExpressJS", highlight: true },
-			{ name: "PHP", highlight: false },
-			{ name: "Laravel", highlight: true },
-			{ name: "FastAPI", highlight: true },
-			{ name: "Python", highlight: false },
-			{ name: "Flask", highlight: false },
-			{ name: "Django", highlight: false },
-			{ name: "PostgreSQL", highlight: true },
-			{ name: "MySQL", highlight: true },
-			{ name: "MongoDB", highlight: false },
-			{ name: "Firebase", highlight: false },
-		],
-		tools: [
-			"Docker",
-			"Kubernetes",
-			"Postman",
-			"Swagger",
-			"Git",
-			"Github",
-			"GitLab",
-			"Bitbucket",
-			"Google Cloud",
-			"IBM Cloud",
-		],
-	},
-	ai: {
-		title: "AI & Machine Learning",
+	automation: {
+		title: "Automatización con IA",
 		icon: ActivityIcon,
-		description: "Developing intelligent solutions with ML/AI",
+		description: "Diseño, pruebo y mantengo herramientas de automatización asistidas por IA",
 		languages: [
-			{ name: "RAG Pipelines", highlight: true },
+			{ name: "Google Apps Script", highlight: true },
+			{ name: "AppSheet", highlight: true },
 			{ name: "Gemini API", highlight: true },
-			{ name: "OpenAI API", highlight: true },
-			{ name: "LangChain", highlight: true },
-			{ name: "Python", highlight: true },
-			{ name: "TensorFlow", highlight: true },
-			{ name: "PyTorch", highlight: false },
-			{ name: "Scikit-learn", highlight: false },
-			{ name: "Pandas", highlight: false },
-			{ name: "NumPy", highlight: false },
-			{ name: "Jupyter", highlight: false },
+			{ name: "Claude", highlight: true },
+			{ name: "Prompt Engineering", highlight: true },
+			{ name: "JavaScript", highlight: false },
+			{ name: "JSON", highlight: false },
 		],
 		tools: [
-			"Jupyter Notebook",
-			"Google Colab",
-			"Google Cloud AI",
-			"AWS SageMaker",
-			"IBM Watson",
+			"Google Workspace",
+			"Google Drive API",
+			"Gmail API",
+			"Google Calendar API",
+			"Antigravity",
 		],
 	},
-	mobile: {
-		title: "Mobile Development",
-		icon: MobileIcon,
-		description: "Cross-platform mobile app development",
+	web: {
+		title: "Aplicaciones Web",
+		icon: CodepenIcon,
+		description: "Construcción de dashboards y herramientas internas a medida",
 		languages: [
-			{ name: "React Native", highlight: true },
-			{ name: "Flutter", highlight: true },
+			{ name: "React", highlight: true },
+			{ name: "Vite", highlight: true },
 			{ name: "JavaScript", highlight: false },
-			{ name: "TypeScript", highlight: false },
-			{ name: "Dart", highlight: false },
+			{ name: "Supabase", highlight: true },
+			{ name: "PapaParse", highlight: false },
+			{ name: "Recharts", highlight: false },
 		],
-		tools: ["Android Studio", "React Native CLI"],
+		tools: ["Vercel", "GitHub", "Google Sheets API"],
+	},
+	operations: {
+		title: "Coordinación y Operaciones",
+		icon: WebhookIcon,
+		description: "Coordinación de oficina, CRM y gestión administrativa",
+		languages: [
+			{ name: "CRM Inmovilla", highlight: true },
+			{ name: "Gestión de mandatos", highlight: false },
+			{ name: "Atención al cliente", highlight: false },
+			{ name: "Facturación", highlight: false },
+			{ name: "Google Sheets", highlight: true },
+			{ name: "Excel", highlight: false },
+		],
+		tools: ["Google Workspace", "Portales inmobiliarios", "Noray Htl"],
+	},
+	creative: {
+		title: "Fotografía y Contenido",
+		icon: MobileIcon,
+		description: "Fotografía, vídeo y creación de contenido de marketing",
+		languages: [
+			{ name: "Fotografía", highlight: true },
+			{ name: "Vídeo / Reels", highlight: true },
+			{ name: "Lightroom", highlight: true },
+			{ name: "Photoshop", highlight: false },
+			{ name: "CapCut", highlight: true },
+			{ name: "Canva", highlight: false },
+			{ name: "GIMP", highlight: false },
+			{ name: "DaVinci Resolve (iniciándome)", highlight: false },
+		],
+		tools: ["Artlist"],
 	},
 };
 
@@ -172,7 +135,7 @@ function SkillDetails({ selectedSkill }) {
         transition={{ delay: 0.2 }}
       >
         <h3 className="text-2xl font-semibold text-black mb-6 text-center">
-          Technology Stack
+          Stack Tecnológico
         </h3>
         <motion.div
           key={selectedSkill.title}
@@ -209,7 +172,7 @@ function SkillDetails({ selectedSkill }) {
         transition={{ delay: 0.4 }}
       >
         <h3 className="text-xl font-medium text-gray-500 mb-6 text-center uppercase tracking-wider">
-          Infrastructure & Tools
+          Herramientas e Infraestructura
         </h3>
         <motion.div
           key={selectedSkill.title + "-tools"}
@@ -234,7 +197,7 @@ function SkillDetails({ selectedSkill }) {
 }
 
 export default function Skills() {
-	const [selectedCategory, setSelectedCategory] = useState("web");
+	const [selectedCategory, setSelectedCategory] = useState("automation");
 	return (
 		<div className="relative">
 			<div className="mx-auto container px-6 py-20">
@@ -244,11 +207,11 @@ export default function Skills() {
 					transition={{ duration: 0.6 }}
 					className="text-center space-y-4 mb-16">
 					<h2 className="text-5xl font-bold bg-gradient-to-r from-black to-gray-600 bg-clip-text text-transparent">
-						Skills & Expertise
+						Habilidades y Experiencia
 					</h2>
 					<p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
-						Explore my technical skills across different domains. Click on any
-						category to see the specific technologies and tools I work with.
+						Explora mis habilidades en distintas áreas. Haz clic en cualquier
+						categoría para ver las tecnologías y herramientas concretas que utilizo.
 					</p>
 				</motion.div>
 

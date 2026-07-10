@@ -1,12 +1,11 @@
 {
-  "name": "alvalen-portfolio-website",
+  "name": "gerard-moreno-portfolio",
   "author": {
-    "name": "Alvalen Shafelbilyunazra",
-    "email": "alvalen.shafel04@gmail.com",
-    "url": "https://alvalens.my.id"
+    "name": "Gerard Moreno Oliva",
+    "email": "gerardmedano@gmail.com"
   },
   "license": "GPL-3.0",
-  "copyright": "Copyright (C) 2025 Alvalen Shafelbilyunazra",
+  "copyright": "Copyright (C) 2025 Alvalen Shafelbilyunazra. Modified by Gerard Moreno Oliva, 2026.",
   "version": "1.0.0",
   "private": true,
   "scripts": {

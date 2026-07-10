@@ -142,7 +142,7 @@ function Page(props) {
 					<div className="min-h-screen sm:min-h-0 flex justify-center items-start flex-col mb-5 space-y-10 mx-auto">
 						<div>
 							<h2 className="uppercase font-normal text-lg tracking-[8px] text-neutral-400">
-								Project
+								Proyecto
 							</h2>
 							<h1 className="text-4xl font-medium text-neutral-900">
 								{data.title}
@@ -150,7 +150,7 @@ function Page(props) {
 						</div>
 						<div>
 							<h2 className="uppercase font-normal text-lg tracking-[8px] text-neutral-400">
-								Technology
+								Tecnología
 							</h2>
 							<p className="text-2xl font-normal text-neutral-900">
 								{data.tech.join(", ")}
@@ -158,7 +158,7 @@ function Page(props) {
 						</div>
 						<div>
 							<h2 className="uppercase font-normal text-lg tracking-[8px] text-neutral-400">
-								Year
+								Periodo
 							</h2>
 							<p className="text-2xl font-normal text-neutral-900">
 								{data.year}
@@ -167,7 +167,7 @@ function Page(props) {
 						{data.preview && (
 							<div>
 								<h2 className="uppercase font-normal text-lg tracking-[8px] text-neutral-400">
-									Preview
+									Demo
 								</h2>
 								<p className="text-2xl font-normal text-neutral-900">
 									<a
@@ -186,7 +186,7 @@ function Page(props) {
 						{data.code && (
 							<div>
 								<h2 className="uppercase font-normal text-lg tracking-[8px] text-neutral-400">
-									Source Code
+									Código
 								</h2>
 								<p className="text-2xl font-normal text-neutral-900">
 									<a
@@ -205,7 +205,7 @@ function Page(props) {
 					</div>
 					<div className="flex justify-start items-start flex-col mb-5 ">
 						<h2 className="uppercase font-normal text-lg tracking-[8px] text-neutral-400">
-							Description
+							Descripción
 						</h2>
 						{data.desc.map((desc, index) => (
 							<p

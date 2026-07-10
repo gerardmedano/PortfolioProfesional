@@ -6,10 +6,10 @@ import Button from "@/components/Button";
 import Image from "next/image";
 
 // images
-import Intervyou1 from "@/public/image/projects/web/intervyou/intervyou-1.png";
-import Intervyou2 from "@/public/image/projects/web/intervyou/intervyou-2.jpeg";
-import Intervyou3 from "@/public/image/projects/web/intervyou/intervyou-3.webp";
-import ProjectAll from "@/public/image/projects.png";
+import Highlight1 from "@/public/image/projects/automation/appsheet/appsheet-cover.jpg";
+import Highlight2 from "@/public/image/projects/automation/appsheet/appsheet-calendar.jpg";
+import Highlight3 from "@/public/image/projects/automation/appsheet/appsheet-menus.jpg";
+import ProjectAll from "@/public/image/projects/automation/leads/leads-diagram.png";
 
 import Hr from "@/components/Hr";
 import ProjectCard from "./components/ProjectCard";
@@ -19,13 +19,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 const category = {
-	1: "Web Development",
-	2: "AI & Machine Learning",
-	9: "Other",
+	3: "Automatización & IA",
 };
 
 export default function Page() {
-	const [activeCategory, setActiveCategory] = useState(1);
+	const [activeCategory, setActiveCategory] = useState(3);
 	const projects = Projects.Projects.filter((item) => item.show === true);
 
 	useEffect(() => {
@@ -46,7 +44,7 @@ export default function Page() {
 							className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 ">
 							<Image
 								src={ProjectAll}
-								alt="Alvalens"
+								alt="Gerard Moreno"
 								fill
 								placeholder="blur"
 								className="object-cover"
@@ -56,14 +54,14 @@ export default function Page() {
 					</div>
 					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 pt-4 backdrop-filter backdrop-blur-sm md:backdrop-blur-none md:backdrop-filter-none bg-gray-100 bg-opacity-50 md:bg-transparent md:pt-0">
 						<h1 className="md:bg-white bg-transparent lg:bg-transparent bg-opacity-50 md-px-0 text-black text-5xl md:text-8xl font-bold">
-							My Projects
+							Mis Proyectos
 						</h1>
 						<Hr />
 						<p className="title  text-xl mt-4 tracking-wider text-gray-900 leading-[1.7rem] mb-5">
-							List of my projects that I have done and{" "}
+							Proyectos de automatización e IA que he construido y{" "}
 							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
 								{" "}
-								currently working on.
+								sigo mejorando.
 							</span>
 						</p>
 						<motion.div
@@ -77,7 +75,7 @@ export default function Page() {
 								});
 							}}
 							className="mb-3">
-							<Button variation="primary">Scroll Down</Button>
+							<Button variation="primary">Bajar</Button>
 						</motion.div>
 					</div>
 				</div>
@@ -100,8 +98,8 @@ export default function Page() {
 									}}
 									className="relative w-full h-full shadow-lg">
 									<Image
-										src={Intervyou1}
-										alt="Alvalens"
+										src={Highlight1}
+										alt="Gerard Moreno"
 										fill
 										placeholder="blur"
 										className="rat object-cover"
@@ -124,8 +122,8 @@ export default function Page() {
 									transition={{ delay: 0.3 }}
 									className="relative w-full h-full shadow-lg ">
 									<Image
-										src={Intervyou3}
-										alt="Alvalens"
+										src={Highlight2}
+										alt="Gerard Moreno"
 										fill
 										placeholder="blur"
 										className="object-cover"
@@ -151,8 +149,8 @@ export default function Page() {
 									}}
 									className="relative w-full h-full shadow-lg">
 									<Image
-										src={Intervyou2}
-										alt="Alvalens"
+										src={Highlight3}
+										alt="Gerard Moreno"
 										fill
 										placeholder="blur"
 										className="object-cover"
@@ -177,29 +175,23 @@ export default function Page() {
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
-							Intervyou AI
+							Gestión de Limpieza y Reservas de Apartamentos
 						</h2>
 						<p className="text-gray-600 text-justify title text-lg">
-							AI Based interview Preparation Website created to help fresh
-							graduates and job seekers prepare for interviews and optimize
-							their CV through AI-powered features. The website is built using
-							Next.js, TypeScript, Tailwind CSS, Shadcn UI, Prisma, and MySQL
-							(TiDB). This website can comprehensively analyze the user&apos;s
-							interview performance by providing a analysis of the user&apos;s
-							answer, gesture, and material recommendation to improve the user&apos;s
-							interview skills.
+							Antes, las reservas de una empresa de alquiler vacacional se
+							anotaban a mano en una libreta y se comunicaban al equipo de
+							limpieza por foto vía WhatsApp. Diseñé una aplicación en AppSheet
+							con permisos dinámicos por rol, 4 vistas de calendario
+							sincronizadas en tiempo real con Google Calendar, y asignación
+							automática de limpieza al crear cada reserva — un sistema
+							pensado para escalar a nuevos apartamentos y usuarios sin
+							fricción.
 						</p>{" "}
 						<div className="mt-3">
 							<Button variation="primary">
-								<Link href="projects/intervyou">More</Link>
-							</Button>
-							<Button variation="secondary">
-								<a
-									href="https://www.intervyou.me"
-									target="_blank"
-									rel="noopener noreferrer">
-									Preview
-								</a>
+								<Link href="projects/gestion-limpieza-reservas-appsheet">
+									Ver más
+								</Link>
 							</Button>
 						</div>
 					</motion.div>
@@ -221,7 +213,7 @@ export default function Page() {
 								delay: 0.7,
 								type: "spring",
 							}}>
-							Other Note Worthy Projects
+							Otros Proyectos Destacados
 						</motion.h1>
 					</div>
 				</div>
