@@ -12,7 +12,7 @@ import { FullPageWrapper, Section, useFullPage } from "@alvalens/react-fullpage-
 // components
 import Button from "@/components/Button";
 import Me from "@/public/image/me/gerard.jpg";
-import MeAbout from "@/public/image/me/gerard.jpg";
+import MeAbout from "@/public/image/me/gerard-2.jpg";
 import Setup from "@/public/image/projects/automation/leads/leads-diagram.png";
 import ProjectAll from "@/public/image/projects/automation/appsheet/appsheet-cover.jpg";
 import Hr from "@/components/Hr";
