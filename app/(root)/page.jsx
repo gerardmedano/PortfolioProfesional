@@ -13,7 +13,7 @@ import { FullPageWrapper, Section, useFullPage } from "@alvalens/react-fullpage-
 import Button from "@/components/Button";
 import Me from "@/public/image/me/gerard.jpg";
 import MeAbout from "@/public/image/me/gerard.jpg";
-import Setup from "@/public/image/projects/automation/leads/leads-diagram.png";
+import Setup from "@/pubabout melic/image/projects/automation/leads/leads-diagram.png";
 import ProjectAll from "@/public/image/projects/automation/appsheet/appsheet-cover.jpg";
 import Hr from "@/components/Hr";
 // icons
@@ -204,7 +204,7 @@ const MyPage = () => {
 								delay: 0.1,
 								type: "spring",
 							}}>
-							About Me
+							Sobre mí
 						</motion.h1>
 						<Hr />
 						<motion.p
