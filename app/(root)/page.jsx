@@ -15,6 +15,7 @@ import Me from "@/public/image/me/gerard.jpg";
 import MeAbout from "@/public/image/me/gerard-2.jpg";
 import Setup from "@/public/image/projects/automation/leads/leads-diagram.png";
 import ProjectAll from "@/public/image/projects/automation/appsheet/appsheet-cover.jpg";
+import LeadsIcons from "@/public/image/projects/automation/leads/icons-diagram.png";
 import Hr from "@/components/Hr";
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -275,7 +276,7 @@ const MyPage = () => {
 						</motion.h1>
 						<Hr />
 						<motion.p
-							className="title  text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5"
+							className="title max-w-md text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5"
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
 							transition={{
@@ -324,7 +325,7 @@ const MyPage = () => {
 								damping: 20,
 							}}>
 							<Image
-								src={Setup}
+								src={LeadsIcons}
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"

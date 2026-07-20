@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Me1 from "@/public/image/me/gerard.jpg";
-import Me2 from "@/public/image/me/gerard.jpg";
-import Me3 from "@/public/image/me/gerard.jpg";
+import Me1 from "@/public/image/me/gerard-6.jpg";
+import Me2 from "@/public/image/me/gerard-5.jpg";
+import Me3 from "@/public/image/me/gerard-4.jpg";
 import Hr from "@/components/Hr";
 
 function Title() {
@@ -150,7 +150,7 @@ export default function About() {
 						soy fotógrafo y creador de contenido audiovisual
 						autónomo desde 2024, trabajando con inmobiliarias,
 						restaurantes, concesionarios, campos de golf,
-						eventos y un ayuntamiento.
+						eventos y organismos gubernamentales.
 					</p>
 				</motion.div>
 			</div>

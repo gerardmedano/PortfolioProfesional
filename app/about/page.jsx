@@ -37,14 +37,14 @@ export default function Page() {
 					<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
 						<motion.div
 							initial={{ scale: 1 }}
-							animate={{ scale: 1.6 }}
+							animate={{ scale: 1.4 }}
 							transition={{ ease: "circOut", duration: 1 }}
-							className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 ">
+							className="relative bg-slate-300 rounded-sm aspect-[9/16] w-[80vw] md:w-[22vw] grayscale hover:grayscale-0 ">
 							<Image
 								src={Hero}
 								alt="Gerard Moreno"
 								fill
-								sizes="(max-width: 768px) 80vw, 30vw"
+								sizes="(max-width: 768px) 80vw, 22vw"
 								className="object-cover"
 								placeholder="blur"
 							/>
