@@ -228,7 +228,7 @@ const MyPage = () => {
 								type: "spring",
 							}}>
 							<Button variation="primary">
-								<a href="/about#quien-soy">Saber más</a>
+								<Link href="/about#quien-soy">Saber más</Link>
 							</Button>
 						</motion.div>
 					</div>
@@ -299,7 +299,7 @@ const MyPage = () => {
 								type: "spring",
 							}}>
 							<Button variation="primary">
-								<a href="/projects#proyectos">Saber más</a>
+								<Link href="/projects#proyectos">Saber más</Link>
 							</Button>
 						</motion.div>
 					</div>
