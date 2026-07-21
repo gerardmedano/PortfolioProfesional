@@ -6,8 +6,8 @@ import Button from "@/components/Button";
 import Image from "next/image";
 
 // images
-import Highlight1 from "@/public/image/projects/automation/appsheet/appsheet-cover.jpg";
-import Highlight2 from "@/public/image/projects/automation/appsheet/appsheet-calendar.jpg";
+import Highlight1 from "@/public/image/projects/automation/appsheet/appsheet-cover.png";
+import Highlight2 from "@/public/image/projects/automation/appsheet/appsheet-calendar.png";
 import Highlight3 from "@/public/image/projects/automation/appsheet/appsheet-menus.jpg";
 import ProjectAll from "@/public/image/projects/automation/leads/icons-diagram.png";
 
@@ -27,7 +27,9 @@ export default function Page() {
 	const projects = Projects.Projects.filter((item) => item.show === true);
 
 	useEffect(() => {
+		if (!window.location.hash) {
 		window.scrollTo(0, 0);
+	}
 	}, []);
 	return (
 		<>
@@ -85,7 +87,7 @@ export default function Page() {
 						<h1 className="text-3xl font-bold mt-3">Hightlight</h1>
 					</div>
 				</div>
-				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
+				<div id="proyectos" className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
 					<div className="flex justify-center items-start flex-col mb-5 ">
 						<div className="images relative w-full  aspect-square">
 							<div className="absolute top-28 left-10 h-[40%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10">

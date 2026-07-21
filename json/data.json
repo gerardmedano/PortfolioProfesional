@@ -65,11 +65,11 @@
       "year": "2026",
       "preview": "",
       "code": "",
-      "thumbnail": "/image/projects/automation/appsheet/appsheet-cover.jpg",
+      "thumbnail": "/image/projects/automation/appsheet/appsheet-cover.png",
       "images": [
-        "/image/projects/automation/appsheet/appsheet-cover.jpg",
+        "/image/projects/automation/appsheet/appsheet-cover.png",
         "/image/projects/automation/appsheet/appsheet-menus.jpg",
-        "/image/projects/automation/appsheet/appsheet-calendar.jpg"
+        "/image/projects/automation/appsheet/appsheet-calendar.png"
       ],
       "tech": [
         "AppSheet",
@@ -94,10 +94,11 @@
       "year": "2026",
       "preview": "",
       "code": "",
-      "thumbnail": "/image/projects/automation/stats-dashboard/stats-vercel-deployed.png",
+      "thumbnail": "/image/projects/automation/stats-dashboard/stats-before-sheets.png",
       "images": [
         "/image/projects/automation/stats-dashboard/stats-before-sheets.png",
-        "/image/projects/automation/stats-dashboard/stats-vercel-deployed.png"
+        "/image/projects/automation/stats-dashboard/stats-vercel-deployed.png",
+        "/image/projects/automation/stats-dashboard/Stats-vercel-fin.png"
       ],
       "tech": [
         "React",

@@ -7,12 +7,14 @@ import Hr from "@/components/Hr";
 
 function Title() {
 	return (
-		<div className="mt-10 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
-			<div className="flex justify-center items-center flex-col my-5 self-start ">
-				<Hr variant="long"></Hr>
-				<h1 className="text-3xl font-bold mt-3">¿Quién soy?</h1>
+		<div id="quien-soy" className="mt-10 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
+			<div className="flex justify-center items-center flex-col my-10">		
+				<div className="flex justify-center items-center flex-col my-5 self-start ">
+					<Hr variant="long"></Hr>
+					<h1 className="text-3xl font-bold mt-3">¿Quién soy?</h1>
+				</div>
 			</div>
-		</div>
+		</div>	
 	);
 }
 

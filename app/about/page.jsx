@@ -20,7 +20,9 @@ import About from "./components/about/about.jsx";
 
 export default function Page() {
 	useEffect(() => {
-		window.scrollTo(0, 0);
+		if (!window.location.hash) {
+			window.scrollTo(0, 0);
+		}
 	}, []);
 
 	return (

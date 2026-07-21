@@ -14,8 +14,10 @@ import Button from "@/components/Button";
 import Me from "@/public/image/me/gerard.jpg";
 import MeAbout from "@/public/image/me/gerard-2.jpg";
 import Setup from "@/public/image/projects/automation/leads/leads-diagram.png";
-import ProjectAll from "@/public/image/projects/automation/appsheet/appsheet-cover.jpg";
+import ProjectAll from "@/public/image/projects/automation/appsheet/appsheet-cover.png";
 import LeadsIcons from "@/public/image/projects/automation/leads/icons-diagram.png";
+import ProjectsHero from "@/public/image/projects/automation/appsheet/Proyectos.jpg";
+import ContactImage from "@/public/image/me/gerard-3.jpg";
 import Hr from "@/components/Hr";
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -226,7 +228,7 @@ const MyPage = () => {
 								type: "spring",
 							}}>
 							<Button variation="primary">
-								<Link href="/about">Saber más</Link>
+								<a href="/about#quien-soy">Saber más</a>
 							</Button>
 						</motion.div>
 					</div>
@@ -254,7 +256,7 @@ const MyPage = () => {
 								damping: 20,
 							}}>
 							<Image
-								src={ProjectAll}
+								src={ProjectsHero}
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
@@ -283,7 +285,7 @@ const MyPage = () => {
 								delay: 0.2,
 								type: "spring",
 							}}>
-							Proyectos de automatización e IA que he construido para
+							Proyectos de automatización e IA construidos y diseñados para
 							mejorar procesos reales de negocio.
 							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
 								{" "}
@@ -297,7 +299,7 @@ const MyPage = () => {
 								type: "spring",
 							}}>
 							<Button variation="primary">
-								<Link href="/projects">Saber más</Link>
+								<a href="/projects#proyectos">Saber más</a>
 							</Button>
 						</motion.div>
 					</div>
@@ -307,7 +309,7 @@ const MyPage = () => {
 				<div className="relative md:h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
 					<div className="z-0 mb-48 md:mb-0  md:absolute md:top-1/2  md:right-[10%] md:-translate-y-1/2">
 						<motion.div
-							className="relative bg-slate-300 rounded-sm h-[400px] md:h-[60vh] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
+							className="relative bg-slate-300 rounded-sm aspect-[9/16] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
 							initial={{
 								x: 300,
 								opacity: 0,
@@ -325,7 +327,7 @@ const MyPage = () => {
 								damping: 20,
 							}}>
 							<Image
-								src={LeadsIcons}
+								src={ContactImage}
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"

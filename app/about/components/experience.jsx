@@ -78,7 +78,7 @@ const experiences = [
 		type: "Tiempo parcial",
 		location: "Tenerife",
 		description:
-			"Fotografía y vídeo (reels) para restaurantes, concesionarios, inmobiliarias, campos de golf y eventos. Colaboración habitual con un ayuntamiento, creando fotografía y contenido en vídeo.",
+			"Fotografía y vídeo (reels) para restaurantes, concesionarios, inmobiliarias, campos de golf y eventos en general. Colaboración habitual con instituciones gubernamentarles, creando fotografía y contenido en vídeo.",
 		skills: [
 			"Fotografía",
 			"Vídeo",
